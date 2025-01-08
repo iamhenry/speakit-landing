@@ -49,7 +49,7 @@ const FAQ = () => {
             <h2 className="heading text-3xl md:text-4xl mb-4">
               Common Questions & Answers
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-white/80">
               Find out all the essential details about our platform and how it
               can serve your needs.
             </p>
@@ -66,12 +66,14 @@ const FAQ = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex gap-6"
             >
-              <span className="text-xl font-semibold text-gray-400 shrink-0">
+              <span className="text-xl font-semibold text-white/40 shrink-0">
                 {index + 1}
               </span>
               <div>
-                <h3 className="text-xl font-semibold mb-2">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
+                <h3 className="text-xl font-semibold mb-2 text-white">
+                  {faq.question}
+                </h3>
+                <p className="text-white/80">{faq.answer}</p>
               </div>
             </motion.div>
           ))}

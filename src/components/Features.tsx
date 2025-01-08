@@ -44,7 +44,7 @@ const itemVariants = {
 
 const Features = () => {
   return (
-    <section className="py-16 md:py-24 bg-gray-50" id="features">
+    <section className="py-16 md:py-24" id="features">
       <div className="container">
         <motion.h2
           className="heading text-3xl md:text-4xl text-center mb-12"
@@ -66,13 +66,15 @@ const Features = () => {
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-sm"
+              className="bg-[#003f67] p-6 rounded-xl shadow-sm"
               variants={itemVariants}
               transition={{ duration: 0.5 }}
             >
-              <feature.icon className="w-12 h-12 text-primary mb-4" />
-              <h3 className="heading text-xl mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <feature.icon className="w-12 h-12 text-white mb-4" />
+              <h3 className="heading text-xl mb-2 text-white">
+                {feature.title}
+              </h3>
+              <p className="text-white/80">{feature.description}</p>
             </motion.div>
           ))}
         </motion.div>

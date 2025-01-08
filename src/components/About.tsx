@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="py-16 md:py-24 bg-gray-50" id="about">
+    <section className="py-16 md:py-24" id="about">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -35,11 +35,11 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="heading text-3xl md:text-4xl mb-6">
+            <h2 className="heading text-3xl md:text-4xl mb-6 text-white">
               Why Choose SpeakIt for Language Learning?
             </h2>
 
-            <div className="space-y-4 text-lg text-gray-600">
+            <div className="space-y-4 text-lg text-white/80">
               <p>
                 SpeakIt revolutionizes language learning by combining advanced
                 AI technology with proven language acquisition methods. Our

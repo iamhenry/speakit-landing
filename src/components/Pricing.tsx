@@ -43,7 +43,7 @@ export default function Pricing() {
     <section className="py-16 md:py-24" id="pricing">
       <div className="container mx-auto">
         <motion.div
-          className="max-w-4xl mx-auto rounded-2xl bg-gray-50 p-8 md:p-12"
+          className="max-w-4xl mx-auto rounded-2xl p-8 md:p-12"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -63,7 +63,7 @@ export default function Pricing() {
               <h3 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
                 Master any language with AI assistance
               </h3>
-              <p className="text-lg text-gray-600 mb-8">
+              <p className="text-lg text-white/80 mb-8">
                 Get access to all premium features:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -73,8 +73,8 @@ export default function Pricing() {
                     variants={itemVariants}
                     className="flex items-center gap-2"
                   >
-                    <Check className="text-green-600 w-5 h-5" />
-                    <span className="text-lg">{feature}</span>
+                    <Check className="text-white w-5 h-5" />
+                    <span className="text-lg text-white">{feature}</span>
                   </motion.div>
                 ))}
               </div>
@@ -85,8 +85,8 @@ export default function Pricing() {
               className="flex flex-col items-end justify-start"
             >
               <div className="text-right">
-                <div className="text-5xl font-bold mb-2">$19</div>
-                <p className="text-gray-600">per month</p>
+                <div className="text-5xl font-bold mb-2 text-white">$19</div>
+                <p className="text-white/80">per month</p>
               </div>
               <Button size="lg" className="mt-8">
                 Get Started

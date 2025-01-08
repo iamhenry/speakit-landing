@@ -3,12 +3,12 @@ import { Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-8 border-t border-gray-200">
+    <footer className="py-8 border-t border-white/10">
       <div className="container">
         <div className="flex items-center justify-between">
           <motion.a
             href="/"
-            className="text-xl font-bold text-primary"
+            className="text-xl font-bold text-white"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -21,7 +21,7 @@ const Footer = () => {
             href="https://twitter.com/speakit"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-primary transition-colors"
+            className="text-white/80 hover:text-white transition-colors"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
