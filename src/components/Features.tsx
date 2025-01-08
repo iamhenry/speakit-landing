@@ -1,30 +1,39 @@
 import { motion } from "framer-motion";
-import { Mic, Brain, MessageSquare, Languages } from "lucide-react";
-
 const features = [
   {
-    icon: Mic,
-    title: "Natural Conversations",
+    icon: "/icons/lock.svg",
+    title: "Privacy First",
     description:
-      "Practice real-world conversations with AI partners that adapt to your level and learning style.",
+      "SpeakIt runs locally on your computer without the need of using the internet or third-party services",
   },
   {
-    icon: Brain,
-    title: "Smart Feedback",
+    icon: "/icons/Messages.svg",
+    title: "Multi-lingual",
     description:
-      "Get instant, personalized feedback on your pronunciation, grammar, and vocabulary usage.",
+      "With automatic language detection, SpeakIt supports over 90 languages.",
   },
   {
-    icon: MessageSquare,
-    title: "Multiple Scenarios",
+    icon: "/icons/bars.svg",
+    title: "Productivity",
     description:
-      "Practice in various contexts - from casual chats to business meetings and academic discussions.",
+      "The average person types 40 words per minute. SpeakIt enables you to 3x that.",
   },
   {
-    icon: Languages,
-    title: "20+ Languages",
+    icon: "/icons/checkmarks.svg",
+    title: "Accuracy Over Siri",
     description:
-      "Learn any language with native-speaking AI tutors available 24/7 for practice.",
+      "Let's face it, Siri isn't that smart. SpeakIt is powered by Whisper and has accuracy rates of 95% to 98.5%",
+  },
+  {
+    icon: "/icons/Voice.svg",
+    title: "Automatic Punctuation",
+    description:
+      "Automatic detection for punctuations like commas, periods, question marks, etc",
+  },
+  {
+    icon: "/icons/email.svg",
+    title: "No Sign-up Required",
+    description: "A friction-free experience without the hassle of signing up",
   },
 ];
 
@@ -66,15 +75,17 @@ const Features = () => {
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              className="bg-[#003f67] p-6 rounded-xl shadow-sm"
+              className="flex flex-col items-center p-6 rounded-xl text-center"
               variants={itemVariants}
               transition={{ duration: 0.5 }}
             >
-              <feature.icon className="w-12 h-12 text-white mb-4" />
-              <h3 className="heading text-xl mb-2 text-white">
-                {feature.title}
-              </h3>
-              <p className="text-white/80">{feature.description}</p>
+              <img
+                src={feature.icon}
+                alt={feature.title}
+                className="w-12 h-12 mb-4"
+              />
+              <h3 className="heading text-xl mb-2">{feature.title}</h3>
+              <p className="text-white">{feature.description}</p>
             </motion.div>
           ))}
         </motion.div>
