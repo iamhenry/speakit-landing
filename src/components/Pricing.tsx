@@ -1,5 +1,9 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 
 const features = [
   "Unlimited AI conversation practice",
@@ -12,77 +16,85 @@ const features = [
   "Regular content updates",
 ];
 
-const Pricing = () => {
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+    },
+  },
+};
+
+export default function Pricing() {
   return (
     <section className="py-16 md:py-24" id="pricing">
-      <div className="container">
+      <div className="container mx-auto">
         <motion.div
-          className="max-w-3xl mx-auto text-center mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          className="max-w-4xl mx-auto rounded-2xl bg-gray-50 p-8 md:p-12"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
         >
-          <h2 className="heading text-3xl md:text-4xl mb-4">
-            Start Your Language Journey Today
-          </h2>
-          <p className="text-lg text-gray-600">
-            Get unlimited access to all features with our simple pricing plan
-          </p>
-        </motion.div>
+          <div className="flex items-center gap-3 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold">Premium Plan</h2>
+            <Badge
+              variant="secondary"
+              className="bg-green-100 text-green-700 hover:bg-green-100"
+            >
+              20% off
+            </Badge>
+          </div>
 
-        <motion.div
-          className="max-w-md mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-            <div className="p-8 text-center border-b border-gray-100 bg-gradient-to-b from-white to-gray-50">
-              <h3 className="text-2xl font-bold mb-4">Premium Plan</h3>
-              <div className="mb-4">
-                <span className="text-5xl font-bold text-primary">$19</span>
-                <span className="text-gray-600">/month</span>
-              </div>
-              <p className="text-gray-600">Billed monthly. Cancel anytime.</p>
-            </div>
-
-            <div className="p-8">
-              <ul className="space-y-5">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+            <motion.div variants={itemVariants}>
+              <h3 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
+                Master any language with AI assistance
+              </h3>
+              <p className="text-lg text-gray-600 mb-8">
+                Get access to all premium features:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {features.map((feature, index) => (
-                  <motion.li
+                  <motion.div
                     key={index}
-                    className="flex items-start gap-4"
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: 0.1 * index }}
+                    variants={itemVariants}
+                    className="flex items-center gap-2"
                   >
-                    <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
-                  </motion.li>
+                    <Check className="text-green-600 w-5 h-5" />
+                    <span className="text-lg">{feature}</span>
+                  </motion.div>
                 ))}
-              </ul>
+              </div>
+            </motion.div>
 
-              <motion.div
-                className="mt-10"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <a
-                  href="#"
-                  className="btn-primary w-full text-lg shadow-md shadow-primary/20"
-                >
-                  Get Started Now
-                </a>
-              </motion.div>
-            </div>
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-col items-end justify-start"
+            >
+              <div className="text-right">
+                <div className="text-5xl font-bold mb-2">$19</div>
+                <p className="text-gray-600">per month</p>
+              </div>
+              <Button size="lg" className="mt-8">
+                Get Started
+              </Button>
+            </motion.div>
           </div>
         </motion.div>
       </div>
     </section>
   );
-};
-
-export default Pricing;
+}
