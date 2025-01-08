@@ -40,7 +40,7 @@ const itemVariants = {
 
 export default function Pricing() {
   return (
-    <section className="pb-[100px]" id="pricing">
+    <section className="pb-[200px]" id="pricing">
       <div className="container mx-auto">
         <motion.div
           className="max-w-4xl mx-auto rounded-2xl p-8"

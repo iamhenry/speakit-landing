@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <section className="pt-32 pb-16 md:pt-40 md:pb-20 pb-[100px]">
+    <section className="pt-32 pb-16 md:pt-40 md:pb-20 pb-[200px]">
       <div className="container text-center">
         <motion.div
           className="w-[880px] flex-col justify-start items-center gap-7 inline-flex"

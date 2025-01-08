@@ -53,7 +53,7 @@ const itemVariants = {
 
 const Features = () => {
   return (
-    <section className="pb-[100px]" id="features">
+    <section className="pb-[200px]" id="features">
       <div className="container">
         <motion.h2
           className="heading text-3xl md:text-4xl text-center mb-12"

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="pb-[100px]" id="about">
+    <section className="pb-[200px]" id="about">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <motion.div
