@@ -43,13 +43,13 @@ export default function Pricing() {
     <section className="pb-[100px]" id="pricing">
       <div className="container mx-auto">
         <motion.div
-          className="max-w-4xl mx-auto rounded-2xl p-8 md:p-12"
+          className="max-w-4xl mx-auto rounded-2xl p-8"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <div className="flex items-center gap-3 mb-6">
-            <h2 className="heading text-3xl md:text-4xl">Lifetime License</h2>
+          <div className="flex items-center gap-3">
+            <h2 className="heading text-1xl md:text-2xl">Lifetime License</h2>
             <Badge
               variant="secondary"
               className="bg-green-100 text-green-700 hover:bg-green-100"
@@ -58,41 +58,38 @@ export default function Pricing() {
             </Badge>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-            <motion.div variants={itemVariants}>
-              <h3 className="heading text-3xl md:text-4xl leading-tight mb-6">
-                Master any language with AI assistance
-              </h3>
-              <p className="text-lg text-white/80 mb-8">
-                Get access to all premium features:
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {features.map((feature, index) => (
-                  <motion.div
-                    key={index}
-                    variants={itemVariants}
-                    className="flex items-center gap-2"
-                  >
-                    <Check className="text-white w-5 h-5" />
-                    <span className="text-lg text-white">{feature}</span>
-                  </motion.div>
-                ))}
+          <motion.div variants={itemVariants}>
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+              <div>
+                <h3 className="heading text-3xl md:text-4xl leading-tight mb-4">
+                  Master any language with AI assistance
+                </h3>
+                <p className="text-lg text-white/80">
+                  Get access to all premium features:
+                </p>
               </div>
-            </motion.div>
-
-            <motion.div
-              variants={itemVariants}
-              className="flex flex-col items-end justify-start"
-            >
-              <div className="text-right">
+              <div className="mt-6 md:mt-0 md:text-right">
                 <div className="text-5xl font-bold mb-2 text-white">$9</div>
                 <p className="text-white/80">Lifetime</p>
+                <Button size="lg" className="mt-4 rounded-full bg-[#00B0F5]">
+                  Buy Now
+                </Button>
               </div>
-              <Button size="lg" className="mt-8 rounded-full bg-[#00B0F5]">
-                Buy Now
-              </Button>
-            </motion.div>
-          </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {features.map((feature, index) => (
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                  className="flex items-center gap-2"
+                >
+                  <Check className="text-white w-5 h-5" />
+                  <span className="text-lg text-white">{feature}</span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

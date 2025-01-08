@@ -2,24 +2,29 @@ import { motion } from "framer-motion";
 
 const faqs = [
   {
-    question: "How does SpeakIt's AI conversation practice work?",
+    question: "What exactly does SpeakIt do?",
     answer:
-      "SpeakIt uses advanced AI technology to create natural, interactive conversations. You speak to AI language partners who understand context, correct your mistakes, and adapt to your proficiency level. The AI provides instant feedback on pronunciation, grammar, and vocabulary usage.",
+      "SpeakIt is a macOS app that converts your spoken words into text. You can record your voice and get accurate text transcriptions instantly on your Mac.",
   },
   {
-    question: "What languages are available on SpeakIt?",
+    question: "Do I need an internet connection to use SpeakIt?",
     answer:
-      "SpeakIt currently supports over 20 languages, including English, Spanish, French, German, Italian, Chinese, Japanese, Korean, and more. We regularly add new languages based on user demand and feedback.",
+      "No! SpeakIt works completely offline. It uses Whisper Models that runs directly on your Mac, so your voice data stays private and secure on your device.",
   },
   {
-    question: "Can I use SpeakIt as a complete beginner?",
+    question: "Will it work with my Mac?",
     answer:
-      "Absolutely! SpeakIt is designed for all proficiency levels, from complete beginners to advanced learners. The AI adapts to your level, starting with basic conversations and gradually increasing complexity as you improve.",
+      "SpeakIt works with Mac's running versions of macOS 14.0+ (M1 chip and above). It's designed to be lightweight and efficient, so it won't slow down your computer.",
   },
   {
-    question: "How much time should I practice each day?",
+    question: "Can I use it for long recordings?",
     answer:
-      "We recommend practicing for at least 15-20 minutes daily for optimal results. However, you can use SpeakIt as much as you want - our AI tutors are available 24/7 for practice sessions of any length.",
+      "Yes! You can record and transcribe conversations of any length. The app is optimized to handle both quick notes and longer sessions.",
+  },
+  {
+    question: "How accurate is the voice recognition?",
+    answer:
+      "Very accurate! We use Whisper by OpenAI, which is known for its high accuracy across different accents and speaking styles. It works well even with background noise and can understand technical terms.",
   },
 ];
 

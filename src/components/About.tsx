@@ -4,19 +4,18 @@ const About = () => {
   return (
     <section className="pb-[100px]" id="about">
       <div className="container">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5" />
+            <div className="relative w-full max-w-md mx-auto">
               <img
-                src="/images/conversation.jpg"
+                src="/images/henry.png"
                 alt="AI Language Learning"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="w-full h-auto rounded-2xl"
                 onError={(e) => {
                   e.currentTarget.style.display = "none";
                   e.currentTarget.parentElement?.classList.add(
@@ -36,7 +35,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h2 className="heading text-3xl md:text-4xl mb-6 text-white">
-              Why Choose SpeakIt for Language Learning?
+              Behind the developer of SpeakIt?
             </h2>
 
             <div className="space-y-4 text-lg text-white/80">
