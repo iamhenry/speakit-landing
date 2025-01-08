@@ -70,7 +70,7 @@ const FAQ = () => {
                 {index + 1}
               </span>
               <div>
-                <h3 className="text-xl font-semibold mb-2 text-white">
+                <h3 className="heading text-xl mb-2 text-white">
                   {faq.question}
                 </h3>
                 <p className="text-white/80">{faq.answer}</p>

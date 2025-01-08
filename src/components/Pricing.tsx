@@ -49,7 +49,7 @@ export default function Pricing() {
           animate="visible"
         >
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl md:text-4xl font-bold">Premium Plan</h2>
+            <h2 className="heading text-3xl md:text-4xl">Premium Plan</h2>
             <Badge
               variant="secondary"
               className="bg-green-100 text-green-700 hover:bg-green-100"
@@ -60,7 +60,7 @@ export default function Pricing() {
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <motion.div variants={itemVariants}>
-              <h3 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
+              <h3 className="heading text-3xl md:text-4xl leading-tight mb-6">
                 Master any language with AI assistance
               </h3>
               <p className="text-lg text-white/80 mb-8">

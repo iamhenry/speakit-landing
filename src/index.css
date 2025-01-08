@@ -1,20 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Laila:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .heading {
+    @apply font-laila;
+  }
+}
+
 @layer base {
   html {
     @apply scroll-smooth;
   }
-  
+
   body {
     @apply text-white;
-    background-color: #0093EE;
+    background-color: #0093ee;
   }
   :root {
-
     --background: 0 0% 100%;
 
     --foreground: 0 0% 3.9%;
@@ -63,10 +70,9 @@
 
     --chart-5: 27 87% 67%;
 
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
-
     --background: 0 0% 3.9%;
 
     --foreground: 0 0% 98%;
@@ -113,7 +119,7 @@
 
     --chart-4: 280 65% 60%;
 
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 
@@ -121,15 +127,15 @@
   .container {
     @apply mx-auto px-4 max-w-container;
   }
-  
+
   .btn {
     @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-colors;
   }
-  
+
   .btn-primary {
     @apply btn bg-primary text-white hover:bg-primary/90;
   }
-  
+
   .heading {
     @apply font-bold tracking-tight;
   }

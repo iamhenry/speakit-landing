@@ -5,14 +5,14 @@ const Hero = () => {
     <section className="pt-32 pb-16 md:pt-40 md:pb-20">
       <div className="container text-center">
         <motion.div
-          className="w-[880px] h-[235px] flex-col justify-start items-center gap-7 inline-flex"
+          className="w-[880px] flex-col justify-start items-center gap-7 inline-flex"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="self-stretch h-[133px] flex-col justify-start items-start gap-4 flex">
+          <div className="self-stretch flex-col justify-start items-start gap-4 flex">
             <motion.h1
-              className="text-center text-white text-[56px] font-bold font-['Laila'] w-full"
+              className="heading text-center text-white text-[56px] w-full"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -52,6 +52,14 @@ const Hero = () => {
               For Apple Silicon, macOS 14.0+
             </div>
           </motion.div>
+          <motion.img
+            src="/src/assets/laptop.png"
+            alt="SpeakIt on MacBook"
+            className="w-[600px] mt-8 mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          />
         </motion.div>
       </div>
     </section>
