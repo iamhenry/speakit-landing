@@ -25,7 +25,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section className="py-16 md:py-24" id="faq">
+    <section className="pb-[100px]" id="faq">
       <div className="container max-w-4xl">
         <div className="text-center mb-12">
           <motion.div

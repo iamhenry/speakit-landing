@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="pt-32 pb-16 md:pt-40 md:pb-20">
+    <section className="pt-32 pb-16 md:pt-40 md:pb-20 pb-[100px]">
       <div className="container text-center">
         <motion.div
           className="w-[880px] flex-col justify-start items-center gap-7 inline-flex"
@@ -20,7 +20,7 @@ const Hero = () => {
               Why type when you can speak?
             </motion.h1>
             <motion.p
-              className="self-stretch opacity-80 text-center text-white text-2xl font-normal font-['Inter'] leading-[30px]"
+              className="self-stretch opacity-80 text-center text-[#CCE4FF] text-xl font-normal leading-[30px] "
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -36,7 +36,7 @@ const Hero = () => {
           >
             <a
               href="#pricing"
-              className="px-4 py-3 bg-[#003f67] rounded-full justify-start items-start inline-flex"
+              className="px-4 py-3 bg-[#00B0F5] rounded-full justify-start items-start inline-flex"
               onClick={(e) => {
                 e.preventDefault();
                 document
@@ -44,11 +44,9 @@ const Hero = () => {
                   ?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              <div className="text-white text-sm font-extrabold font-['Karla']">
-                Buy Now
-              </div>
+              <div className="text-white text-sm font-extrabold">Buy Now</div>
             </a>
-            <div className="self-stretch opacity-80 text-center text-white text-xs font-normal font-['Inter'] leading-[30px]">
+            <div className="self-stretch opacity-80 text-center text-white text-xs font-normal leading-[30px]">
               For Apple Silicon, macOS 14.0+
             </div>
           </motion.div>

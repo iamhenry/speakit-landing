@@ -40,7 +40,7 @@ const itemVariants = {
 
 export default function Pricing() {
   return (
-    <section className="py-16 md:py-24" id="pricing">
+    <section className="pb-[100px]" id="pricing">
       <div className="container mx-auto">
         <motion.div
           className="max-w-4xl mx-auto rounded-2xl p-8 md:p-12"
@@ -49,7 +49,7 @@ export default function Pricing() {
           animate="visible"
         >
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="heading text-3xl md:text-4xl">Premium Plan</h2>
+            <h2 className="heading text-3xl md:text-4xl">Lifetime License</h2>
             <Badge
               variant="secondary"
               className="bg-green-100 text-green-700 hover:bg-green-100"
@@ -85,11 +85,11 @@ export default function Pricing() {
               className="flex flex-col items-end justify-start"
             >
               <div className="text-right">
-                <div className="text-5xl font-bold mb-2 text-white">$19</div>
-                <p className="text-white/80">per month</p>
+                <div className="text-5xl font-bold mb-2 text-white">$9</div>
+                <p className="text-white/80">Lifetime</p>
               </div>
-              <Button size="lg" className="mt-8">
-                Get Started
+              <Button size="lg" className="mt-8 rounded-full bg-[#00B0F5]">
+                Buy Now
               </Button>
             </motion.div>
           </div>
