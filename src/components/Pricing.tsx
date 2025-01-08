@@ -6,14 +6,14 @@ import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 
 const features = [
-  "Unlimited AI conversation practice",
-  "Real-time pronunciation feedback",
-  "20+ languages available",
-  "Progress tracking & analytics",
-  "Custom learning paths",
-  "24/7 AI tutor availability",
-  "Mobile & desktop access",
-  "Regular content updates",
+  "Unlimited voice-to-text transcription",
+  "Offline speech recognition",
+  "Over 90+ language supported",
+  "Native macOS experience",
+  "Custom hotkey shortcuts",
+  "Automatic punctuation",
+  "No Subscriptions",
+  "Privacy-focused",
 ];
 
 const containerVariants = {
@@ -62,7 +62,7 @@ export default function Pricing() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
               <div>
                 <h3 className="heading text-3xl md:text-4xl leading-tight mb-4">
-                  Master any language with AI assistance
+                  Transform your voice into text with AI precision
                 </h3>
                 <p className="text-lg text-white/80">
                   Get access to all premium features:
@@ -71,7 +71,7 @@ export default function Pricing() {
               <div className="mt-6 md:mt-0 md:text-right">
                 <div className="text-5xl font-bold mb-2 text-white">$9</div>
                 <p className="text-white/80">Lifetime</p>
-                <Button size="lg" className="mt-4 rounded-full bg-[#00B0F5]">
+                <Button className="mt-4 px-4 py-3 bg-[#00B0F5] hover:bg-[#043B50] rounded-full transition-colors duration-200">
                   Buy Now
                 </Button>
               </div>

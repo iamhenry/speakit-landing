@@ -35,29 +35,26 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h2 className="heading text-3xl md:text-4xl mb-6 text-white">
-              Behind the developer of SpeakIt?
+              Meet the developer
             </h2>
 
             <div className="space-y-4 text-lg text-white/80">
               <p>
-                SpeakIt revolutionizes language learning by combining advanced
-                AI technology with proven language acquisition methods. Our
-                platform creates an immersive environment where you can practice
-                speaking naturally, without fear of judgment.
+                What's up, I'm Henry, the creator of SpeakIt. I developed this
+                app out of frustration with subscription and a strong desire to
+                protect my private conversations from third-party services.
               </p>
 
               <p>
-                Unlike traditional language learning apps that focus on
-                vocabulary and grammar drills, SpeakIt emphasizes real
-                conversation practice. Our AI tutors adapt to your level,
-                providing personalized feedback and encouragement to help you
-                progress faster.
+                As a product designer with 15 years of experience, creating my
+                first Mac app was a challenge. However, it was an opportunity to
+                turn my design experience into a tangible tool.
               </p>
 
               <p>
-                Whether you're a beginner starting your language journey or an
-                advanced learner aiming for fluency, SpeakIt provides the tools
-                and support you need to succeed.
+                I'm excited to share SpeakIt with you, an app that prioritizes
+                privacy and has given me peace of mind and increased
+                productivity.
               </p>
             </div>
           </motion.div>

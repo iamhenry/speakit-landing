@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
@@ -34,9 +35,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <a
-              href="#pricing"
-              className="px-4 py-3 bg-[#00B0F5] rounded-full justify-start items-start inline-flex"
+            <Button
+              className="px-4 py-3 bg-[#00B0F5] hover:bg-[#043B50] rounded-full transition-colors duration-200"
               onClick={(e) => {
                 e.preventDefault();
                 document
@@ -44,8 +44,8 @@ const Hero = () => {
                   ?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              <div className="text-white text-sm font-extrabold">Buy Now</div>
-            </a>
+              Buy Now
+            </Button>
             <div className="self-stretch opacity-80 text-center text-white text-xs font-normal leading-[30px]">
               For Apple Silicon, macOS 14.0+
             </div>
