@@ -19,7 +19,7 @@
 
   body {
     @apply text-white;
-    background-color: #0093ee;
+    background-color: #0077ff;
   }
   :root {
     --background: 0 0% 100%;
