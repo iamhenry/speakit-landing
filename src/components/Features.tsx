@@ -62,7 +62,7 @@ const Features = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Everything You Need to Speak Fluently
+          Features
         </motion.h2>
 
         <motion.div
