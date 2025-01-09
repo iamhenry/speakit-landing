@@ -59,7 +59,7 @@ const Hero = () => {
           >
             <div className="relative">
               <img
-                src="/src/assets/laptop.png"
+                src="/images/laptop.png"
                 alt="SpeakIt on MacBook"
                 className="w-full h-auto"
               />
