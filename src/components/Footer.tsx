@@ -18,7 +18,7 @@ const Footer = () => {
           </motion.a>
 
           <motion.a
-            href="https://twitter.com/speakit"
+            href="https://twitter.com/soyhenryxyz"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/80 hover:text-white transition-colors"
