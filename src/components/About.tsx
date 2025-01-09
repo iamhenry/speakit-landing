@@ -40,8 +40,8 @@ const About = () => {
 
             <div className="space-y-4 text-lg text-white/80">
               <p>
-                What's up, I'm Henry, the creator of SpeakIt. I developed this
-                app out of frustration with subscription and a strong desire to
+                What's up! I'm Henry, the creator of SpeakIt. I developed this
+                app out of frustration with subscriptions and a strong desire to
                 protect my private conversations from third-party services.
               </p>
 
