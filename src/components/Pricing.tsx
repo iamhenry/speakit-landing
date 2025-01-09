@@ -43,12 +43,12 @@ export default function Pricing() {
     <section className="pb-[200px]" id="pricing">
       <div className="container mx-auto">
         <motion.div
-          className="max-w-4xl mx-auto rounded-2xl p-8"
+          className="max-w-4xl mx-auto rounded-2xl p-4"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 mb-4">
             <h2 className="heading text-1xl md:text-2xl">Lifetime License</h2>
             <Badge
               variant="secondary"
@@ -59,10 +59,10 @@ export default function Pricing() {
           </div>
 
           <motion.div variants={itemVariants}>
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+            <div className="flex flex-col md:flex-row  md:justify-between mb-8">
               <div>
                 <h3 className="heading text-3xl md:text-4xl leading-tight mb-4">
-                  Transform your voice into text with AI precision
+                  Transform your voice into text with SpeakIt
                 </h3>
                 <p className="text-lg text-white/80">
                   Get access to all premium features:

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Twitter } from "lucide-react";
+import TwitterXIcon from "./icons/twitter-x.svg";
 
 const Footer = () => {
   return (
@@ -29,7 +29,11 @@ const Footer = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <Twitter className="w-6 h-6" />
+            <img
+              src={TwitterXIcon}
+              alt="Follow us on Twitter"
+              className="w-6 h-6"
+            />
             <span className="sr-only">Follow us on Twitter</span>
           </motion.a>
         </div>
