@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
+import { SubtleWaveform } from "./SubtleWaveform";
 
 const Hero = () => {
   return (
-    <section className="pt-32 pb-16 md:pt-40 md:pb-20 pb-[200px]">
+    <section className="pt-32 pb-16 md:pt-40 md:pb-20 pb-[200px] relative">
       <div className="container text-center">
         <motion.div
           className="w-[880px] flex-col justify-start items-center gap-7 inline-flex"
@@ -50,14 +51,23 @@ const Hero = () => {
               For Apple Silicon, macOS 14.0+
             </div>
           </motion.div>
-          <motion.img
-            src="/src/assets/laptop.png"
-            alt="SpeakIt on MacBook"
-            className="w-[600px] mt-8 mb-16"
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-          />
+            className="relative w-[600px] mx-auto mt-8 mb-16"
+          >
+            <div className="relative">
+              <img
+                src="/src/assets/laptop.png"
+                alt="SpeakIt on MacBook"
+                className="w-full"
+              />
+              <div className="absolute top-[10%] right-[5%]">
+                <SubtleWaveform />
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
